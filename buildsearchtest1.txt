@@ -1,0 +1,12 @@
+echo "====Test Started===="
+results='grep "Hello" index.html | wc -1'
+echo $results
+if [ "$results" = "1" ]
+then
+     echo "Test Passed"
+     exit 0
+else
+     echo "Test Failed"
+     exit 1
+fi
+echo "====Test Finished==="
