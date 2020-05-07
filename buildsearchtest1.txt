@@ -1,7 +1,7 @@
 echo "====Test Started===="
-results='grep "Hello" index.html | wc -1'
-echo $results
-if [ "$results" = "1" ]
+result=`grep "Hello" index.html | wc -l`
+echo $result
+if [ "$result" = "1" ]
 then
      echo "Test Passed"
      exit 0
